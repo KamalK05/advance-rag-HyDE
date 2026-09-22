@@ -1,6 +1,9 @@
 from utils.utils import load_config, get_llm, get_embedding_model
 import numpy as np
 
+# ======================================================
+# Generate HyDE Answer
+# ======================================================
 def generate_hyde_answer(query):
     config = load_config()
     llm = get_llm(config)

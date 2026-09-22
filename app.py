@@ -66,7 +66,7 @@ def main():
     # ======================================================
     # Build or load FAISS based on provider
     # ======================================================
-    chunks = load_and_chunk_docs("./data/raw/insurance_docs", chunk_size = 50, chunk_overlap = 20)
+    chunks = load_and_chunk_docs("./data/raw/ai_docs", chunk_size = 50, chunk_overlap = 20)
     retriever = get_retriever(config, chunks_if_needed = chunks)
 
     # ======================================================
