@@ -17,6 +17,9 @@ def generate_hyde_answer(query):
     synthetic_answer = llm.invoke(prompt).content.strip()
     return synthetic_answer
 
+# ======================================================
+# Generate HyDE Embeddings
+# ======================================================
 def generate_hyde_embedding(query):
     """
     Main HyDE function:
