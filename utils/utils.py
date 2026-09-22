@@ -8,10 +8,16 @@ from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmb
 
 load_dotenv()
 
+# ======================================================
+# Load Config
+# ======================================================
 def load_config(config_path = "config.yaml"):
     with open(config_path, "r") as f:
         return yaml.safe_load(f)
 
+# =========================================================
+# Load and Return Chat LLM (OPENAI and GEMINI is Supported)
+# =========================================================
 def get_llm(config):
     provider = config["llm"]["provider"]
     
@@ -38,6 +44,9 @@ def get_llm(config):
     else:
         raise ValueError("Provider must be one of: openai | gemini")
 
+# ================================================================
+# Load and Return Embedding Model (OPENAI and GEMINI is Supported)
+# ================================================================
 def get_embedding_model(config):
        provider = config["llm"]["provider"]
 

@@ -1,6 +1,8 @@
 from utils.utils import load_config, get_llm
 
-
+# ======================================================
+# Query Rewriter
+# ======================================================
 def rewrite_query(user_query: str, config):
     """
     Rewrites or expands a query to be more specific, contextual, and

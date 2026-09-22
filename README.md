@@ -62,7 +62,7 @@
                        ▼                                           ▼
           ┌─────────────────────────┐                 ┌─────────────────────────┐
           │     Vector Search       │                 │     Raw Documents       │
-          │  (FAISS / Local Store)  │                 │ (insurance_docs/*.txt)  │
+          │  (FAISS / Local Store)  │                 │     (ai_docs/*.txt)     │
           └────────────┬────────────┘                 └────────────┬────────────┘
                        │                                           │
                        └─────────────────────┬─────────────────────┘
@@ -82,9 +82,9 @@
 advance-rag-HyDE/
 ├── 📁 data/
 │   └── 📁 raw/
-│       └── 📁 insurance_docs/
-│           ├── 📄 claim_procedure.txt     # Sample insurance claim guide
-│           └── 📄 policy_terms.txt        # Sample policy terms and conditions
+│       └── 📁 ai_docs/
+│           ├── 📄 langchain_guide.txt        # Sample langchain guide
+│           └── 📄 transformers_in_ai.txt     # Sample transformer in ai guide
 │
 ├── 📁 utils/                              # Core Processing Modules
 │   ├── 📄 __init__.py

@@ -3,6 +3,9 @@ from langchain_community.document_loaders import TextLoader, PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
 
+# ======================================================
+# Load Documents and Create Chunks
+# ======================================================
 def load_and_chunk_docs(folder_path, chunk_size = 500, chunk_overlap = 200):
     docs = []
 
